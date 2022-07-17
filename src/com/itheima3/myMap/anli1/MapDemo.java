@@ -24,7 +24,8 @@ public class MapDemo {
         map.put("郭靖","黄蓉");
         map.put("杨过","小龙女");
 
-        //获取所有键值对对象的集合(第一次使用entrySet)
+        // Set<Map.Entry<K,V>> entrySet():
+        // 获取所有键值对对象的集合(第一次使用entrySet)
 
         Set<Map.Entry<String, String>> entrySet = map.entrySet();
         //遍历键值对对象的集合，得到每一个键值对对象

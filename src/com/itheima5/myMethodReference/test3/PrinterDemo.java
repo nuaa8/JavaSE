@@ -22,12 +22,10 @@ public class PrinterDemo {
 //        });
 
         usePrinter(s -> System.out.println(s.toUpperCase()));//上面的简写形式
-
         //引用对象的实例方法
         PrintString ps=new PrintString();
         usePrinter(ps::printUpper);
-
-        //Lambda表达式被对象的实例方法替代的时候，它的形式参数全部传递给该方法作为参数
+        //Lambda表达式被对象的实例方法替代的时候，它的形式参数(这里是s)全部传递给该方法(这里是printUpper)作为参数
     }
     private static void usePrinter(Printer p){
         p.printUpperCase("HelloWorld");

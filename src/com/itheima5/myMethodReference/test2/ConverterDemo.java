@@ -2,7 +2,7 @@ package com.itheima5.myMethodReference.test2;
 /*
     Lambda表达式支持的方法引用
     常见的引用方式：
-        引用类方法
+        引用类方法（其实就是引用类的静态方法）
             格式：类名::静态方法  范例：Integer::parseInt
         引用对象的实例方法(其实就是引用类中的成员方法)
             格式：对象::成员方法     范例：“HelliWorld”::toUpperCase  String类中的方法： public String toUpperCase() 将此String所有字符转换成大写
@@ -28,12 +28,11 @@ public class ConverterDemo {
 //        useConverter((String s)->{
 //            return Integer.parseInt(s);
 //        });
-        useConverter(s -> Integer.parseInt(s));
 
+        useConverter(s -> Integer.parseInt(s));
         //引用类方法
         useConverter(Integer::parseInt);
-
-        //Lambda表达式被类方法代替的时候，它的形参全部传递给静态方法作为参数
+        //Lambda表达式被类方法代替的时候，它的形参（这里是s）全部传递给静态方法（这里是parseInt）作为参数
 
     }
     private static void useConverter(Converter c){

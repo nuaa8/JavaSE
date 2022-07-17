@@ -28,9 +28,10 @@ public class PrintableDemo {
         usePrintable(s -> System.out.println(s));
 //        System.out.println("爱生活，爱java");
 
-        //方法引用符： ::
+        //方法引用符： ::     (直接将参数s，传给方法println，只是这个动作并没有显示出来)
         usePrintable(System.out::println);
-        //可推导的就是可省略的
+        //分析：直接使用System.out中的println方法来取代Lambda，代码更加的简介
+        //一个原则：可推导的就是可省略的
 
     }
     public static void usePrintable(Printable p){

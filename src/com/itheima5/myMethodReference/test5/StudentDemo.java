@@ -22,10 +22,9 @@ public class StudentDemo {
 //        });
 
         useStudentBuilder(((name, age) -> new Student(name,age)));
-
         //引用构造器方法
         useStudentBuilder(Student::new);
-        //Lambda表达式被构造器代替的时候，它的形参全部传递给构造器作为参数
+        //Lambda表达式被构造器代替的时候，它的形参(这里是（name,age）)全部传递给构造器(student的带两个参数的构造器)作为参数
 
     }
     private static void useStudentBuilder(StudentBuilder sb){
