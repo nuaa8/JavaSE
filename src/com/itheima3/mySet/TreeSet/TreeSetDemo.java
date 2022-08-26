@@ -1,5 +1,5 @@
 package com.itheima3.mySet.TreeSet;
-/*
+/**
     自然排序Comparable的使用
         结论：
         1.用TreeSet集合存储自定义对象，无参构造方法使用的是   自然排序  对元素进行排序的

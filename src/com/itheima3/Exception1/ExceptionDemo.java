@@ -1,5 +1,8 @@
 package com.itheima3.Exception1;
 
+/**
+ * 虽然可以通过try...catch 对异常进行处理，但是并不是所有的异常我们都有  权限  进行异常处理。这是就要用到throws
+ */
 public class ExceptionDemo {
     public static void main(String[] args) {
         method();

@@ -1,8 +1,8 @@
-package com.itheima3.mySet;
+package com.itheima3.mySet.TreeSet;
 
 import java.util.TreeSet;
 
-/*
+/**
     TreeSet集合练习
         存储整数遍历（用整数类）
     TreeSet集合特点

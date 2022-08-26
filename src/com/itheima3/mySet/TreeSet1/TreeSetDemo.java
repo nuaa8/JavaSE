@@ -3,7 +3,7 @@ package com.itheima3.mySet.TreeSet1;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-/*
+/**
     比较器排序Comparator的使用
     结论：
     1.用TreeSet集合存储自定义对象，带参构造方法使用的是   比较器排序  对元素进行排序的

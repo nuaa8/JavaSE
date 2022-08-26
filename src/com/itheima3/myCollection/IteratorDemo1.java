@@ -6,8 +6,8 @@ import java.util.Iterator;
 
 /*
     Iterator:迭代器，集合专用的遍历方式
-        Iterator<E> iterator():返回此集合中元素的迭代器，通过集合的iterator()方法得到
-        迭代器是通过集合的iterator()方法得到，所以我们说他是依赖于集合而存在的
+        Iterator<E> iterator():返回此集合中元素的迭代器，通过  集合的iterator()方法  得到
+        迭代器是通过  集合的iterator()方法  得到，所以我们说他是依赖于集合而存在的
 
     Iterator中的常用方法
         E next():返回迭代中的下一个元素
@@ -28,7 +28,6 @@ public class IteratorDemo1 {
     public static void main(String[] args) {
         //创建集合对象
         Collection<String> c=new ArrayList<String>();
-
         //添加元素
         c.add("hello");
         c.add("world");
@@ -36,7 +35,7 @@ public class IteratorDemo1 {
         //Iterator<E> iterator():返回此集合中元素的迭代器，通过集合的iterator()方法得到
 //        Iterator<String> it=c.iterator();//通过多态的方式的得到Iterator的对象
 //        Iterator<String> it = c.iterator();
-        Iterator<String> it = c.iterator();
+        Iterator<String> it = c.iterator();  //通过集合对象获取迭代器对象
 //        Iterator<String> it1 = c.iterator();
 
         /*

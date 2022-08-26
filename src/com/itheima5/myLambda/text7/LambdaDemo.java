@@ -13,7 +13,7 @@ package com.itheima5.myLambda.text7;
  */
 public class LambdaDemo {
     public static void main(String[] args) {
-        //内名内部类
+        //匿名内部类
         /*
         useInter(new Inter() {
             @Override

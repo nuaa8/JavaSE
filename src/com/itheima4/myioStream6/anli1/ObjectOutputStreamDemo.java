@@ -18,10 +18,12 @@ import java.io.ObjectOutputStream;
        NoteSerializableException:抛出一个实力需要一个Serializable接口。序列化运行时或实例的类可能会抛出此异常
        类的序列化由实现java.io.Serializable接口的类启用的。不实现此接口的类将不会使任何状态序列化或反序列化
 
-    注意：
-    1.一个对象要想被序列化，该对象所属的类必须实现    Serializable   接口
-    2.Serializable是一个   标记接口   ，实现该接口，不需要重写任何方法
+ */
 
+/**
+ *  注意：
+ *     1.一个对象要想被序列化，该对象所属的类必须实现    Serializable   接口
+ *     2.Serializable是一个   标记接口   ，实现该接口，不需要重写任何方法
  */
 public class ObjectOutputStreamDemo {
     public static void main(String[] args) throws IOException {

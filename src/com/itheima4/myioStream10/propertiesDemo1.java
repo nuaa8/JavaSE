@@ -6,7 +6,7 @@ import java.util.Set;
 /*
     Properties概数：
         1.是一个Map体系的集合类
-        2.Properties可以保存到流中或从流中加载
+        2.Properties可以保存到 流中 或从 流中 加载
     Properties作为Map集合的使用
  */
 public class propertiesDemo1 {

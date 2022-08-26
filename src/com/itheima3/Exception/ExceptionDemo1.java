@@ -1,4 +1,13 @@
 package com.itheima3.Exception;
+/**
+ * Throwable的成员方法
+ *  1.public String getMessage():
+ *      返回此throwable的详细字符串
+ *  2.public string toString():
+ *      返回此可抛出的简短的描述
+ *  3.public void printStackTrace():
+ *      把异常的错误信息输出在控制台
+ */
 
 public class ExceptionDemo1 {
     public static void main(String[] args) {
@@ -11,7 +20,7 @@ public class ExceptionDemo1 {
             int[] arr = {1, 2, 3};
             System.out.println(arr[3]);//new ArrayIndexOutOfBoundsException();
         } catch(ArrayIndexOutOfBoundsException e){
-            e.printStackTrace();//把异常的错误信息输出在控制台.一般使用这个把异常信息输出，因为给出的信息最全
+//            e.printStackTrace();//把异常的错误信息输出在控制台.一般使用这个把异常信息输出，因为给出的信息最全
 
 
             //public String getMessage():返回此throwable的详细字符串

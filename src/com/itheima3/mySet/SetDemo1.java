@@ -20,6 +20,7 @@ public class SetDemo1 {
         set.add("java");
         //不包括重复元素的集合
         set.add("hello");
+        System.out.println(set);
 
         //遍历
         for(String s:set){

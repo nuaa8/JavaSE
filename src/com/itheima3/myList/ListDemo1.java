@@ -21,7 +21,7 @@ public class ListDemo1 {
         list.add("world");
 
         //输出集合对象
-//        System.out.println(list);
+        System.out.println(list);
         //迭代器的方式遍历
         Iterator<String> it=list.iterator();
         while(it.hasNext()){
